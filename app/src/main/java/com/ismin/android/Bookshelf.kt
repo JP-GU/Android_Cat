@@ -25,4 +25,8 @@ class Bookshelf : Serializable {
     fun getTotalNumberOfBooks(): Int {
         return this.storage.size
     }
+    fun deleteBook(title:String){
+        this.storage.remove(title)
+    }
+
 }

@@ -1,8 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="691a0548-6b7e-4379-90d4-38446c4ad9ec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_picasso_picasso_2_5_2_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ismin/android/Book.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ismin/android/Book.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ismin/android/BookAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ismin/android/BookAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ismin/android/BookListFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ismin/android/BookListFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ismin/android/BookService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ismin/android/BookService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ismin/android/BookViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ismin/android/BookViewHolder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ismin/android/Bookshelf.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ismin/android/Bookshelf.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ismin/android/CreateBookFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ismin/android/CreateBookFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ismin/android/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ismin/android/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_create_book.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_create_book.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_book.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/row_book.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/ismin/android/BookshelfUnitTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/ismin/android/BookshelfUnitTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +63,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17" />
@@ -47,7 +78,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -117,13 +148,47 @@
       <screen x="0" y="23" width="1440" height="811" />
     </state>
     <state x="236" y="162" key="#PSD/0.23.1440.811@0.23.1440.811" timestamp="1606681088764" />
+    <state x="299" y="135" key="AndroidThemeDialog" timestamp="1606714927689">
+      <screen x="0" y="23" width="1440" height="816" />
+    </state>
+    <state x="299" y="135" key="AndroidThemeDialog/0.23.1440.816@0.23.1440.816" timestamp="1606714927689" />
+    <state width="1358" height="194" key="GridCell.Tab.0.bottom" timestamp="1606714107008">
+      <screen x="0" y="23" width="1440" height="814" />
+    </state>
+    <state width="1358" height="194" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1606696904601" />
+    <state width="1358" height="194" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1606714107008" />
+    <state width="1358" height="194" key="GridCell.Tab.0.bottom/0.23.1440.816@0.23.1440.816" timestamp="1606710453557" />
+    <state width="1358" height="194" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1606709515621" />
+    <state width="1358" height="194" key="GridCell.Tab.0.center" timestamp="1606714107007">
+      <screen x="0" y="23" width="1440" height="814" />
+    </state>
+    <state width="1358" height="194" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1606696904600" />
+    <state width="1358" height="194" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1606714107007" />
+    <state width="1358" height="194" key="GridCell.Tab.0.center/0.23.1440.816@0.23.1440.816" timestamp="1606710453557" />
+    <state width="1358" height="194" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1606709515620" />
+    <state width="1358" height="194" key="GridCell.Tab.0.left" timestamp="1606714107007">
+      <screen x="0" y="23" width="1440" height="814" />
+    </state>
+    <state width="1358" height="194" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1606696904597" />
+    <state width="1358" height="194" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1606714107007" />
+    <state width="1358" height="194" key="GridCell.Tab.0.left/0.23.1440.816@0.23.1440.816" timestamp="1606710453557" />
+    <state width="1358" height="194" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1606709515620" />
+    <state width="1358" height="194" key="GridCell.Tab.0.right" timestamp="1606714107008">
+      <screen x="0" y="23" width="1440" height="814" />
+    </state>
+    <state width="1358" height="194" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1606696904600" />
+    <state width="1358" height="194" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1606714107008" />
+    <state width="1358" height="194" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1606710453557" />
+    <state width="1358" height="194" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1606709515621" />
     <state x="220" y="62" key="SettingsEditor" timestamp="1606681082278">
       <screen x="0" y="23" width="1440" height="811" />
     </state>
     <state x="220" y="62" key="SettingsEditor/0.23.1440.811@0.23.1440.811" timestamp="1606681082278" />
-    <state x="398" y="280" key="com.intellij.ide.util.TipDialog" timestamp="1606681030838">
-      <screen x="0" y="23" width="1440" height="811" />
+    <state x="398" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1606710638198">
+      <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state x="398" y="280" key="com.intellij.ide.util.TipDialog/0.23.1440.811@0.23.1440.811" timestamp="1606681030838" />
+    <state x="398" y="280" key="com.intellij.ide.util.TipDialog/0.23.1440.812@0.23.1440.812" timestamp="1606695524868" />
+    <state x="398" y="281" key="com.intellij.ide.util.TipDialog/0.23.1440.816@0.23.1440.816" timestamp="1606710638198" />
   </component>
 </project>

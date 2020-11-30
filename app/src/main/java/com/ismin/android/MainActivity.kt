@@ -1,10 +1,15 @@
 package com.ismin.android
 
 import android.os.Bundle
+import android.text.Editable
+import android.util.Log
 import android.view.View
+import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -18,10 +23,11 @@ class MainActivity : AppCompatActivity(), BookCreator {
     private val bookshelf = Bookshelf()
     private lateinit var bookService: BookService;
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         val retrofit = Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())
             .baseUrl("https://ruinan-bookshelf.cleverapps.io")
@@ -38,7 +44,6 @@ class MainActivity : AppCompatActivity(), BookCreator {
                 allBooks?.forEach {
                     bookshelf.addBook(it)
                 }
-
                 displayList()
             }
 
@@ -59,8 +64,7 @@ class MainActivity : AppCompatActivity(), BookCreator {
     }
 
     private fun displayList() {
-        val bookListFragment = BookListFragment.newInstance(bookshelf.getAllBooks())
-
+        val bookListFragment = BookListFragment.newInstance(bookshelf.getAllBooks(),this)
         supportFragmentManager.beginTransaction()
             .replace(R.id.a_main_lyt_container, bookListFragment)
             .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
@@ -74,10 +78,23 @@ class MainActivity : AppCompatActivity(), BookCreator {
             .addToBackStack("createBookFragment")
             .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
             .commit()
-
         a_main_btn_creation.visibility = View.GONE
     }
-
+    /////////////////////////////////////////Gu
+    fun Delete(view:View){
+        bookService.deleteBook(view.tag.toString()).enqueue(){
+            onResponse={
+                bookshelf.deleteBook(view.tag.toString())
+                displayList()
+            }
+            onFailure={
+                if(it!=null){
+                    displayErrorToast(it)
+                }
+            }
+        }
+    }
+    /////////////////////////////////////////Gu
     override fun onBookCreated(book: Book) {
         bookService.createBook(book).enqueue {
             onResponse = {

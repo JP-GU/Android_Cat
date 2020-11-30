@@ -18,6 +18,8 @@ class CreateBookFragment : Fragment() {
     private lateinit var edtTitle: EditText
     private lateinit var edtAuthor: EditText
     private lateinit var edtDate: EditText
+    private lateinit var edturl_wiki: EditText
+    private lateinit var edturl_post: EditText
     private lateinit var card: CardView
     private lateinit var rootLayout: ViewGroup
     private lateinit var blackView: View
@@ -33,6 +35,8 @@ class CreateBookFragment : Fragment() {
         edtTitle = rootView.findViewById(R.id.f_create_book_edt_title)
         edtAuthor = rootView.findViewById(R.id.f_create_book_edt_author)
         edtDate = rootView.findViewById(R.id.f_create_book_edt_date)
+        edturl_post = rootView.findViewById(R.id.f_create_book_edt_url_post)//gu
+        edturl_wiki = rootView.findViewById(R.id.f_create_book_edt_url_wiki)//gu
         card = rootView.findViewById(R.id.f_create_book_card)
         blackView = rootView.findViewById(R.id.f_create_book_black_view)
 
@@ -78,7 +82,9 @@ class CreateBookFragment : Fragment() {
             Book(
                 edtTitle.text.toString(),
                 edtAuthor.text.toString(),
-                edtDate.text.toString()
+                edtDate.text.toString(),
+                edturl_post.text.toString(),//gu
+                edturl_wiki.text.toString()//gu
             )
         )
     }

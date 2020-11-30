@@ -11,12 +11,14 @@
         android:id="@+id/f_create_book_black_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#BB000000" />
+        android:background="#BB000000"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-105dp" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/f_create_book_card"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="405dp"
+        android:layout_height="438dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -26,10 +28,49 @@
             android:layout_height="match_parent"
             android:padding="16dp">
 
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/f_create_book_til_url_post"
+                android:layout_width="378dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.481"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/f_create_book_til_url_wiki"
+                app:layout_constraintVertical_bias="0.161">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/f_create_book_edt_url_post"
+                    android:layout_width="347dp"
+                    android:layout_height="48dp"
+                    android:hint="@string/url_post" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/f_create_book_til_url_wiki"
+                android:layout_width="369dp"
+                android:layout_height="48dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.888"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.697">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/f_create_book_edt_url_wiki"
+                    android:layout_width="385dp"
+                    android:layout_height="48dp"
+                    android:hint="@string/url_wiki" />
+            </com.google.android.material.textfield.TextInputLayout>
+
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="334dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="28dp"
                 android:text="@string/add_a_book"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                 app:layout_constraintBottom_toTopOf="@+id/f_create_book_til_title"
@@ -37,16 +78,18 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/f_create_book_til_title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="366dp"
+                android:layout_height="46dp"
+                android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toTopOf="@+id/f_create_book_til_author"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.589"
                 app:layout_constraintStart_toStartOf="parent">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/f_create_book_edt_title"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="46dp"
                     android:hint="@string/title" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -55,6 +98,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toBottomOf="@+id/f_create_book_til_date"
                 app:layout_constraintEnd_toStartOf="@+id/f_create_book_til_date"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -63,17 +107,16 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/f_create_book_edt_author"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="57dp"
                     android:hint="@string/author" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/f_create_book_til_date"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="178dp"
+                android:layout_height="67dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginBottom="16dp"
-                app:layout_constraintBottom_toTopOf="@+id/f_create_book_btn_save"
+                app:layout_constraintBottom_toTopOf="@+id/f_create_book_til_url_wiki"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/f_create_book_til_author">
@@ -81,7 +124,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/f_create_book_edt_date"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="57dp"
                     android:hint="@string/date" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -93,6 +136,7 @@
                 android:text="@string/sauvegarder"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
